@@ -1,8 +1,14 @@
 #include <stdio.h>
 
-int main() {
+int main()
+{
+   int character = 65;
+   int finish = 90;
 
-   printf("Hello, world\n");
+   for (; character <= finish; character++)
+   {
+      printf("ASCII charater = %c, value = %d\n", character, character);
+   }
 
    return 0;
 }
