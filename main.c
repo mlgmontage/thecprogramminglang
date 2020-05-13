@@ -1,8 +1,18 @@
 #include <stdio.h>
 
-int main() {
+int main()
+{
+   char thread[30];
 
-   printf("Hello, world\n");
+   for (int i = 0; i < 30; i++)
+   {
+      thread[i] = 'a';
+   }
+
+   for (int i = 0; i < 30; i++)
+   {
+      printf("%p -> %c\n", thread + i, *(thread + i));
+   }
 
    return 0;
 }
